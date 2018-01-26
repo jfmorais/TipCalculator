@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <drawable name="quantidade_background">#B8DEFB</drawable>
+    <drawable name="resultados_background">#FFE0B2</drawable>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:columnCount="2"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:useDefaultMargins="true"
+    tools:context="br.com.curymorais.calculadoragorjeta.MainActivity">
+
+
+    <EditText
+        android:id="@+id/quantidadeEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:digits="0123456789"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="6" />
+
+    <TextView
+        android:id="@+id/quantidadeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_columnSpan="2"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="0"
+        android:background="@drawable/quantidade_background"
+        android:elevation="@dimen/elevation_textview"
+        android:hint="@string/quantidade"
+        android:padding="@dimen/textview_padding" />
+
+    <TextView
+        android:id="@+id/porcentagemTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_column="0"
+        android:layout_gravity="right|center_vertical"
+        android:layout_row="1"
+        android:text="@string/gorjeta_porcentagem" />
+
+
+    <SeekBar
+        android:id="@+id/porcentagemSeekBar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/seekbar_height"
+        android:layout_column="1"
+        android:layout_gravity="fill_horizontal"
+        android:layout_row="1"
+        android:max="100"
+        android:min="0"
+        android:progress="10" />
+
+    <TextView
+        android:id="@+id/gorjetaLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/gorjeta" />
+
+    <TextView
+        android:id="@+id/gorjetaTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="@drawable/resultados_background"
+        android:elevation="@dimen/elevation_textview"
+        android:gravity="center"
+        android:padding="@dimen/textview_padding" />
+
+    <TextView
+        android:id="@+id/totalLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/total" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill_horizontal"
+        android:background="@drawable/resultados_background"
+        android:elevation="@dimen/elevation_textview"
+        android:gravity="center"
+        android:padding="@dimen/textview_padding" />
+
+</GridLayout>

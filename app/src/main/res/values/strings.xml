@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CalculadoraGorjeta</string>
+    <string name="quantidade">Entre com o valor</string>
+    <string name="gorjeta_porcentagem">10%</string>
+    <string name="gorjeta">Gorjeta</string>
+    <string name="total">Total</string>
+</resources>
