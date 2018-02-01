@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tip Calculator</string>
+    <string name="quantidade">Enter the value</string>
+    <string name="gorjeta_porcentagem">10%</string>
+    <string name="gorjeta">Tip</string>
+    <string name="total">Total</string>
+</resources>
